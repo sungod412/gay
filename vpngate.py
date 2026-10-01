@@ -51,7 +51,7 @@ VPNGATE_MIRROR = os.environ.get(
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
 # 已部署的 Cloudflare Worker 检测接口 (GET /check?proxyip=host:port, 实测确认)
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://check.helei.kdns.fr/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://gay.1314412.xyz/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))   # 与 Worker 网页端一致的并发模型
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))          # 单请求客户端超时 (秒)
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))         # 0=不限; 本地测试可设小值
@@ -460,8 +460,17 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "saas.072159.xyz:443,hzytjy.cn:443,ali.nonull.pp.ua:443,auto.dolby.dpdns.org:443,"
-        "cdn.cnno.de:443,saas.sin.fan:443,cf.777791.xyz:443",
+        "chrono24.com:443,markmonitor.com:443,gitlab.com:443,www.sloomb.com:443,www.trumpinternationalrealty.com:443,"
+        "staticdelivery.nexusmods.com:443,www.leics.police.uk:443,images.chesscomfiles.com:443,auto.dolby.dpdns.org:443,"
+        "cdn.204910.best:443,cdn.fiatnorm.us.kg:443,dianomi.com:443,aqua-aria.company:443,bbs.alipansou.com:443,cf.qq.ms:443,"
+        "img.css.sd:443,mokeedev.com:443,tt.78607323.xyz:443,hsl.upstate.edu:443,cf.vvhan.com:443,cdn.jwcmdr.top:443,"
+        "01-cctv.com:443,api.gzcrtw.com:443,cnllm.com:443,cdn.555586.xyz:443,cloudflare.idc.rocks:443,www.speedtest.net:443,"
+        "www.sofi.com:443,www.shopify.com:443,www.dbs.com.sg:443,mogas.com:443,www.visa.com.hk:443,www.doiting.com:443,"
+        "store.ubi.com:443,www.epicgames.com:443,crinacle.com:443,db-ip.com:443,email.lg.com:443,js.org:443,"
+        "www.akasantech.com:443,api2-ide.imgnxa.com:443,s.ee:443,www.postman.com:443,redis.io:443,vps.cheng2001.top:443,"
+        "www.canadatype.com:443,codeforces.com:443,dx.doi.org:443,iskills.com:443,www.giannidelprete.it:443,"
+        "www.redboxtools.com:443,i.pixiv.re:443,www.vastnovel.com:443,img.dexbug.com:443,mrmacintosh.com:443,infinitemac.org:443,"
+        "ip.sb:443,shabak.gov.il:443,cfip.1323123.xyz:443,224322.xyz:443,helium.computer:443,cf.0sm.com:443,openai.com:443",
     ).split(",")
     if h.strip()
 ]
@@ -522,8 +531,8 @@ def build_hosts_text(data):
 
 
 # edgetunnel 完整订阅 (vless://) 配置
-EDT_UUID = os.environ.get("EDT_UUID", "90c14586-42a5-4c30-959d-8b36608d67f7")
-EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "ed.xiaolei.qzz.io")
+EDT_UUID = os.environ.get("EDT_UUID", "120caec6-e0a2-4513-a924-6d1dd988c90e")
+EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "0120.1314412.xyz")
 EDT_FINGERPRINT = os.environ.get("EDT_FINGERPRINT", "chrome")
 SUB_URL = os.environ.get("SUB_URL", "https://jerylihub.github.io/gate/sub.txt")
 
